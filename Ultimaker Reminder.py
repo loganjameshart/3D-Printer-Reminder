@@ -21,6 +21,7 @@ SMTPSERVER = ""
 # function definitions which handle emailing based upon printer selection
 # adding time.sleep() functions to seem more human
 def ultimakerS3(emailAddress):
+    """Sends email with S3 Notification"""
     smtpObj = smtplib.SMTP(SMTPSERVER, 587)
     smtpObj.ehlo()
     time.sleep(2)
@@ -32,6 +33,7 @@ def ultimakerS3(emailAddress):
     smtpObj.quit()
 
 def ultimakerA(emailAddress):
+    """Sends email with Ultimaker A Notification"""
     smtpObj = smtplib.SMTP(SMTPSERVER, 587)
     smtpObj.ehlo()
     time.sleep(2)
@@ -43,6 +45,7 @@ def ultimakerA(emailAddress):
     smtpObj.quit()
 
 def ultimakerB(emailAddress):
+    """Sends email with Ultimaker B Notification"""
     smtpObj = smtplib.SMTP(SMTPSERVER, 587)
     smtpObj.ehlo()
     time.sleep(2)
@@ -54,6 +57,7 @@ def ultimakerB(emailAddress):
     smtpObj.quit()
 
 def ultimakerC(emailAddress):
+    """Sends email with Ultimaker C Notification"""
     smtpObj = smtplib.SMTP(SMTPSERVER, 587)
     smtpObj.ehlo()
     time.sleep(2)
